@@ -80,7 +80,13 @@
   
  
   }
-
+.nav-item::before{
+content:"" ;
+display: block;
+width: 48px;
+height: 4px;
+background-color:#2196F3;
+}
   .current {
     color: var(--maim-blu-color);
     text-decoration: none;
@@ -108,7 +114,8 @@
     text-decoration: none;
   }
 
- .contact-mail:hover,.current1:hover,.current2:hover,.contact-phone:hover,.address:hover,.contact-mail1:hover,.button-primary1:hover{
+ .contact-mail:hover,.current1:hover,.current2:hover,.contact-phone:hover,.address:hover,.contact-mail1:hover,.button-primary1:hover
+ .contact-mail:focus,.current1:focus,.current2:focus,.contact-phone:focus,.address:focus,.contact-mail1:focus,.button-primary1:focus,.contact-mail:focus,.current1:focus,.current2:focus,.contact-phone:focus,.address:focus,.contact-mail1:focus,.button-primary1:focus{
 text-decoration: none;
 color:rgb(0, 132, 255);
 }
@@ -325,7 +332,6 @@ width: 70px;
 height: 70px;
 }
 .sect1-icon{
-  
 
 stroke-linecap: round;
 }
@@ -555,7 +561,8 @@ fill: currentColor;
   height: 106px;
   
 }
-.clients-link:hover{
+.clients-link:hover,
+.clients-link:focus{
   fill: #2196F3;
   border: 1px solid #2196F3;
 }
@@ -717,6 +724,7 @@ fill: currentColor;
     background-color: rgba(255, 255, 255, 0.1);
     fill: var(--maim-text-color);
   }
-  .footer-socials-link:hover{
+  .footer-socials-link:hover,
+  .footer-socials-link:focus{
    background-color: #2196F3;
   }
