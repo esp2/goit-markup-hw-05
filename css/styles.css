@@ -86,6 +86,9 @@ display: block;
 width: 48px;
 height: 4px;
 background-color:#2196F3;
+position: absolute;
+top: 0;
+left: 0;
 }
   .current {
     color: var(--maim-blu-color);
@@ -181,7 +184,6 @@ color:rgb(0, 132, 255);
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    
   }
 
   .section-title1 {
@@ -503,7 +505,8 @@ stroke-linecap: round;
   background-color:#FFFFFF;
   border-radius: 50%;
 }
-.socials-link:hover{
+.socials-link:hover,
+.socials-link:focus{
   background-color: #2196F3;
 }
 .socials-icon{
@@ -518,7 +521,8 @@ fill: var(--maim-darck-color);
 fill: currentColor;
 }
 
-.socials-icon1:hover{
+.socials-icon1:hover,
+.socials-icon1:focus{
   fill: rgb(0, 132, 255);
 }
   .socials-link:hover .socials-icon,
@@ -574,6 +578,13 @@ fill: currentColor;
   }
     .work-list {
       margin: -15px;
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      background-color: #2196F3;
+      z-index: 10;
+      overflow: hidden-scroll;
+  
     }
   .portfolio img {
     display: block;
@@ -587,7 +598,8 @@ fill: currentColor;
     margin-bottom: 30px;
     margin: 15px;
   }
-.photo-iteam:hover{
+.photo-iteam:hover,
+.photo-iteam:focus{
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
